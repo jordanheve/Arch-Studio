@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import {ArrowRightIcon} from '@heroicons/react/24/solid'
 
@@ -14,11 +13,11 @@ export default function Footer() {
         <NavLink to='/portfolio'>
             Portfolio
         </NavLink>
-        <NavLink to='contact'>
-            Contact
-        </NavLink>
         <NavLink to='about'>
             About Us
+        </NavLink>
+        <NavLink to='contact'>
+            Contact
         </NavLink>
         </nav>
         <Link

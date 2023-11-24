@@ -1,10 +1,8 @@
-import React from "react";
-import { Fade } from "react-awesome-reveal";
+
 
 export default function WelcomeSection() {
   return (
     <section className="w-full">
-      <Fade>
         <div className="flex items-end  relative">
           <h1 className="text-slate-200 text-[13.5rem] font-bold top-[-9rem] absolute ">
             Welcome
@@ -35,7 +33,6 @@ export default function WelcomeSection() {
           </div>
           <img src="/home/desktop/image-welcome.jpg" alt="welcome image" />
         </div>
-      </Fade>
     </section>
   );
 }

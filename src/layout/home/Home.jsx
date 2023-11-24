@@ -1,4 +1,3 @@
-import React from 'react'
 import Slider from './Slider'
 import AboutSection from './AboutSection'
 import { Fade } from 'react-awesome-reveal'
@@ -11,10 +10,10 @@ export default function Home() {
     <main className='flex flex-col gap-48'>
       <Fade>
       <Slider/>
-      </Fade>
       <WelcomeSection/>
       <AboutSection/>
       <FeaturedSection/>
+      </Fade>
     </main>
   )
 }

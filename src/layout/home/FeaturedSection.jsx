@@ -1,5 +1,3 @@
-import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import useDeviceType from "../../hooks/useDeviceType";
@@ -11,7 +9,6 @@ export default function FeaturedSection() {
   const textClass = "absolute bottom-8  left-8 text-white ";
   const imgClass = "brightness-[.7]";
   return (
-    <Fade>
       <section>
         <div className="flex justify-between mb-12">
           <h3 className="text-black text-6xl font-bold">Featured</h3>
@@ -66,6 +63,5 @@ export default function FeaturedSection() {
           </div>
         </div>
       </section>
-    </Fade>
   );
 }

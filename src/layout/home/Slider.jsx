@@ -1,9 +1,7 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from 'swiper'
 import { Autoplay } from 'swiper/modules';
 import {ArrowRightIcon} from '@heroicons/react/24/solid'
-// Import Swiper styles
 import "swiper/css";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -159,4 +157,4 @@ export default function Slider () {
       </div>
     </section>
   );
-};
+}
