@@ -6,8 +6,19 @@ import "swiper/css";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useDeviceType from "../../hooks/useDeviceType";
+import Loading from "../portfolio/Loading";
 SwiperCore.use([Autoplay]);
 export default function Slider () {
+  const [loadedImages, setLoadedImages] = useState([]);
+
+  const handleImageLoad = (index) => {
+    setLoadedImages((prevLoadedImages) => {
+      const updatedLoadedImages = [...prevLoadedImages];
+      updatedLoadedImages[index] = true;
+      return updatedLoadedImages;
+    });
+  };
+
   const buttonClass =
     "text-slate-500 h-[80px] w-[80px] bg-white hover:bg-slate-100 cursor-pointer";
   const activeButtonClass =
@@ -62,7 +73,6 @@ export default function Slider () {
 
   return (
     <section className="relative">
-      
       <Swiper
         autoplay={{
           delay: 3000,
@@ -77,12 +87,17 @@ export default function Slider () {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
+      
           <div className="flex justify-center relative">
             <img
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-paramour.jpg`}
               alt="project paramour"
+              onLoad={() => handleImageLoad(0)}
             />
+              {!loadedImages[0] && (
+              <Loading />
+            )}
             <SliderInfo
             title={"Project Paramour"}
             paragraph={"Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture."}
@@ -95,7 +110,11 @@ export default function Slider () {
               className="mr-[1px] brightness-[.6]"
               src={`/home/${windowSize}/image-hero-seraph.jpg`}
               alt="seraph station"
+              onLoad={() => handleImageLoad(1)}
             />
+              {!loadedImages[1] && (
+              <Loading />
+            )}
             <SliderInfo
             title={"Seraph Station"}
             paragraph={"The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations."}
@@ -108,7 +127,11 @@ export default function Slider () {
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-federal.jpg`}
               alt="federal II tower"
+              onLoad={() => handleImageLoad(2)}
             />
+              {!loadedImages[2] && (
+              <Loading />
+            )}
             <SliderInfo
             title={"Federal II Tower"}
             paragraph={"A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches."}
@@ -121,7 +144,11 @@ export default function Slider () {
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-trinity.jpg`}
               alt="Trinity bank tower"
+              onLoad={() => handleImageLoad(3)}
             />
+              {!loadedImages[3] && (
+              <Loading />
+            )}
             <SliderInfo
             title={"Trinity Bank Tower"}
             paragraph={"Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives."}
