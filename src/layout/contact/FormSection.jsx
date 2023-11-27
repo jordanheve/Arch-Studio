@@ -127,6 +127,7 @@ export default function FormSection() {
         </div>
         <div className="flex justify-end -mt-1">
           <button
+            title="Send message"
             className="bg-black p-4 w-fit hover:opacity-75"
             aria-label="submit"
             type="submit"

@@ -2,9 +2,9 @@
 
 export default function WelcomeSection() {
   return (
-    <section className="w-full">
-        <div className="flex items-end  relative">
-          <h1 className="text-slate-200 text-[13.5rem] font-bold top-[-9rem] absolute ">
+    <section className="w-full ">
+        <div className="flex items-end max-sm:px-4  relative">
+          <h1 className="text-slate-200 text-[13.5rem] font-bold top-[-9rem] absolute max-lg:hidden">
             Welcome
           </h1>
           <div className="w-full grid place-content-center">
@@ -31,7 +31,7 @@ export default function WelcomeSection() {
               </p>
             </div>
           </div>
-          <img src="/home/desktop/image-welcome.jpg" alt="welcome image" />
+          <img className="max-lg:hidden" src="/home/desktop/image-welcome.jpg" alt="welcome image" />
         </div>
     </section>
   );

@@ -4,9 +4,9 @@ const useDeviceType = () => {
   const [windowSize, setWindowSize] = useState("desktop");
 
   const getDeviceType = (width) => {
-    if (width < 400) {
+    if (width < 640) {
       setWindowSize("mobile");
-    } else if (width >= 400 && width < 900) {
+    } else if (width >= 640 && width < 1024) {
       setWindowSize("tablet");
     } else {
       setWindowSize("desktop");

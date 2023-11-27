@@ -51,12 +51,13 @@ export default function Slider () {
     }
   }, []);
 
+  const slideContainerClass = "flex justify-center relative w-fit mx-auto"
   const SliderInfo = ({title, paragraph}) => {
     return(
 
-      <div className="absolute left-44 top-1/2  -translate-y-1/2 text-white max-w-sm flex flex-col gap-6">
-              <h3 className="text-7xl font-bold">{title}</h3>
-              <p> 
+      <div className="absolute max-sm:px-5 sm:left-8 lg:left-44 top-1/2  -translate-y-1/2 text-white max-w-sm flex flex-col gap-6">
+              <h3 className="text-5xl sm:text-7xl font-bold">{title}</h3>
+              <p className="text-lg"> 
                 {paragraph}
               </p>
               <Link 
@@ -88,7 +89,7 @@ export default function Slider () {
       >
         <SwiperSlide>
       
-          <div className="flex justify-center relative">
+          <div className={slideContainerClass}>
             <img
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-paramour.jpg`}
@@ -105,7 +106,7 @@ export default function Slider () {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center relative">
+          <div className={slideContainerClass}>
             <img
               className="mr-[1px] brightness-[.6]"
               src={`/home/${windowSize}/image-hero-seraph.jpg`}
@@ -122,7 +123,7 @@ export default function Slider () {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center">
+          <div className={slideContainerClass}>
             <img
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-federal.jpg`}
@@ -139,7 +140,7 @@ export default function Slider () {
           </div>{" "}
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center">
+          <div className="flex justify-cente relative w-fit mx-auto">
             <img
               className="brightness-[.6]"
               src={`/home/${windowSize}/image-hero-trinity.jpg`}
@@ -156,7 +157,7 @@ export default function Slider () {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute bottom-0 z-10 left-[-80px] font-semibold">
+      <div className="absolute bottom-0 z-10 left-[-80px] font-semibold max-xl:hidden">
         <button
           onClick={() => goToSlide(0)}
           className={activeIndex === 0 ? activeButtonClass : buttonClass}

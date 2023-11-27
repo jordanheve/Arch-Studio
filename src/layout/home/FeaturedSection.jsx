@@ -5,19 +5,19 @@ export default function FeaturedSection() {
   const windowSize = useDeviceType();
   const subtitleClass = "font-bold text-3xl";
   const viewAllClass = "text-slate-100";
-  const numberClass = "absolute top-0 right-0 opacity-50  text-white text-[14rem] font-semibold tracking-[-1rem]";
+  const numberClass = "absolute top-0 right-0 opacity-50  text-white text-[14rem] font-semibold tracking-[-1rem] max-lg:hidden";
   const textClass = "absolute bottom-8  left-8 text-white ";
   const imgClass = "brightness-[.7]";
   return (
-      <section>
-        <div className="flex justify-between mb-12">
+      <section className="">
+        <div className="flex justify-center lg:justify-between  mb-12">
           <h3 className="text-black text-6xl font-bold">Featured</h3>
-          <Link className="bg-black flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white" to="/portfolio">
+          <Link className="bg-black flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white max-lg:hidden" to="/portfolio">
             See All
             <ArrowRightIcon className="h-8" />
           </Link>
         </div>
-        <div className="flex gap-6">
+        <div className="flex max-lg:flex-col gap-6 items-center">
           <div className="relative">
             <img
               className={imgClass}
@@ -61,7 +61,12 @@ export default function FeaturedSection() {
               </Link>
             </div>
           </div>
+          <Link className="lg:hidden bg-black flex items-center justify-center py-4 px-6 gap-4 font-semibold w-full max-w-[311px] sm:max-w-[573px] text-white" to="/portfolio">
+            See All
+            <ArrowRightIcon className="h-8" />
+          </Link>
         </div>
+        
       </section>
   );
 }
