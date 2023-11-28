@@ -3,7 +3,7 @@ import L from "leaflet"
 import 'leaflet/dist/leaflet.css'
 
 const customIcon = L.icon({
-    iconUrl: '/marker-icon.png',
+    iconUrl: '/Arch-Studio/marker-icon.png',
     iconSize: [70, 70],
     iconAnchor: [35, 70]
 })
