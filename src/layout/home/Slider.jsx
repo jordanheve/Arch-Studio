@@ -61,7 +61,7 @@ export default function Slider () {
                 {paragraph}
               </p>
               <Link 
-                to='/portfolio'
+                to='/Arch-Studio/portfolio'
                 className="bg-black p-4 w-fit flex hover:bg-zinc-800 active:bg-zinc-600 gap-4">
                 See Our Portfolio
                 <ArrowRightIcon
@@ -92,7 +92,7 @@ export default function Slider () {
           <div className={slideContainerClass}>
             <img
               className="brightness-[.6]"
-              src={`/home/${windowSize}/image-hero-paramour.jpg`}
+              src={`/Arch-Studio/home/${windowSize}/image-hero-paramour.jpg`}
               alt="project paramour"
               onLoad={() => handleImageLoad(0)}
             />
@@ -109,7 +109,7 @@ export default function Slider () {
           <div className={slideContainerClass}>
             <img
               className="mr-[1px] brightness-[.6]"
-              src={`/home/${windowSize}/image-hero-seraph.jpg`}
+              src={`/Arch-Studio/home/${windowSize}/image-hero-seraph.jpg`}
               alt="seraph station"
               onLoad={() => handleImageLoad(1)}
             />
@@ -126,7 +126,7 @@ export default function Slider () {
           <div className={slideContainerClass}>
             <img
               className="brightness-[.6]"
-              src={`/home/${windowSize}/image-hero-federal.jpg`}
+              src={`/Arch-Studio/home/${windowSize}/image-hero-federal.jpg`}
               alt="federal II tower"
               onLoad={() => handleImageLoad(2)}
             />
@@ -143,7 +143,7 @@ export default function Slider () {
           <div className="flex justify-cente relative w-fit mx-auto">
             <img
               className="brightness-[.6]"
-              src={`/home/${windowSize}/image-hero-trinity.jpg`}
+              src={`/Arch-Studio/home/${windowSize}/image-hero-trinity.jpg`}
               alt="Trinity bank tower"
               onLoad={() => handleImageLoad(3)}
             />

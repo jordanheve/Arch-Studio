@@ -23,7 +23,7 @@ export const Portfolio = () => {
           <div className="relative cursor-pointer hover:opacity-80" key={item.id}>
             <div className='bg-gradient-to-t from-black opacity-50 to-45% h-full w-full absolute'></div>
             <img
-              src={"/portfolio/" + windowSize + "/" + item.image}
+              src={"/Arch-Studio/portfolio/" + windowSize + "/" + item.image}
               alt={item.name + " image"}
               className="portfolio-image"
               onLoad={() => handleImageLoad(index)}

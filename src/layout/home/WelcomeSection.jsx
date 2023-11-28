@@ -31,7 +31,7 @@ export default function WelcomeSection() {
               </p>
             </div>
           </div>
-          <img className="max-lg:hidden" src="/home/desktop/image-welcome.jpg" alt="welcome image" />
+          <img className="max-lg:hidden" src="/Arch-Studio/home/desktop/image-welcome.jpg" alt="welcome image" />
         </div>
     </section>
   );

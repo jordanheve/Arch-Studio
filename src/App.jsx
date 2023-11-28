@@ -31,10 +31,10 @@ function App() {
       <ScrollToTop/>
       <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/Arch-Studio' element={<Home/>}/>
+          <Route path='/Arch-Studio/portfolio' element={<Portfolio/>}/>
+          <Route path='/Arch-Studio/about' element={<About/>}/>
+          <Route path='/Arch-Studio/contact' element={<Contact/>}/>
         </Routes>
       <Footer/>
       </BrowserRouter>

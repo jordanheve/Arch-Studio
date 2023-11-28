@@ -6,7 +6,7 @@ export default function TellUsSection() {
     <section className="mx-auto w-fit flex relative max-lg:flex-col items-center lg:items-end">
       <img
         className="brightness-75 flex-grow-1 "
-        src={`/contact/${windowSize}/image-hero.jpg`}
+        src={`/Arch-Studio/contact/${windowSize}/image-hero.jpg`}
         alt="someone using a laptop"
       />
         <div className="sm:absolute max-sm:mt-[-45px] z-10 max-sm:mr-8 bg-white w-[343px] h-[45px] sm:bottom-0 right-0 sm:h-[431px] sm:w-[515px] lg:h-[501px]"></div>

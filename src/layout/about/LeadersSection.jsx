@@ -16,7 +16,7 @@ export default function LeadersSection() {
         
         <img 
         className="hover:brightness-50 "
-        src={item.image} alt={item.name+' image'}/>
+        src={'/Arch-Studio'+item.image} alt={item.name+' image'}/>
         </div>
         <h4 className="text-3xl font-semibold mt-4">{item.name}</h4>
         <span className="text-slate-600">{item.position}</span>

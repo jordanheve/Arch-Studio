@@ -23,7 +23,7 @@ export default function HeritageSection() {
           </p>
         </div>
       </div>
-      <img className="max-lg:hidden" src="/about/desktop/image-heritage.jpg" alt="heritage" />
+      <img className="max-lg:hidden" src="/Arch-Studio/about/desktop/image-heritage.jpg" alt="heritage" />
     </section>
   );
 }

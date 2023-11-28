@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="bg-black h-32 w-32 lg:h-48 lg:w-48 grid -top-16 place-items-center max-md:absolute">
         <NavLink
          title='Go to home page'
-         to="/">
+         to="/Arch-Studio">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="40">
             <path
               fill="#FFF"
@@ -17,12 +17,12 @@ export default function Footer() {
         </NavLink>
       </div>
       <nav className="bg-slate-200 w-2/3 text-slate-500 font-semibold flex max-md:flex-col gap-10 items-center p-10 text-lg lg:h-48">
-        <NavLink to="/portfolio">Portfolio</NavLink>
-        <NavLink to="about">About Us</NavLink>
-        <NavLink to="contact">Contact</NavLink>
+        <NavLink to="/Arch-Studio/portfolio">Portfolio</NavLink>
+        <NavLink to="/Arch-Studio/about">About Us</NavLink>
+        <NavLink to="/Arch-Studio/contact">Contact</NavLink>
       </nav>
       <Link
-        to="/portfolio"
+        to="/Arch-Studio/portfolio"
         className=" text-white md:absolute right-0 bottom-1/2 translate-y-1/2 bg-black hover:bg-zinc-800 active:bg-zinc-600 flex items-center justify-center py-4 px-8 gap-4 max-sm:w-full font-semibold text-lg"
       >
         See Our Portfolio

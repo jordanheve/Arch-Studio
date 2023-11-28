@@ -12,7 +12,7 @@ export default function FeaturedSection() {
       <section className="">
         <div className="flex justify-center lg:justify-between  mb-12">
           <h3 className="text-black text-6xl font-bold">Featured</h3>
-          <Link className="bg-black hover:bg-zinc-800 active:bg-zinc-600 flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white max-lg:hidden" to="/portfolio">
+          <Link className="bg-black hover:bg-zinc-800 active:bg-zinc-600 flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white max-lg:hidden" to="/Arch-Studio/portfolio">
             See All
             <ArrowRightIcon className="h-8" />
           </Link>
@@ -21,14 +21,14 @@ export default function FeaturedSection() {
           <div className="relative">
             <img
               className={imgClass}
-              src={`/portfolio/${windowSize}/image-del-sol.jpg`}
+              src={`/Arch-Studio/portfolio/${windowSize}/image-del-sol.jpg`}
               alt="image project del sol"
             />
 
             <span className={numberClass}>1</span>
             <div className={textClass}>
               <h4 className={subtitleClass}>Project Del Sol</h4>
-              <Link to="/portfolio" className={viewAllClass}>
+              <Link to="/Arch-Studio/portfolio" className={viewAllClass}>
                 View All Projects
               </Link>
             </div>
@@ -36,13 +36,13 @@ export default function FeaturedSection() {
           <div className="relative">
             <img
               className={imgClass}
-              src={`/portfolio/${windowSize}/image-228b.jpg`}
+              src={`/Arch-Studio/portfolio/${windowSize}/image-228b.jpg`}
               alt="image 228b tower"
             />
             <span className={numberClass}>2</span>
             <div className={textClass}>
               <h4 className={subtitleClass}>228B Tower</h4>
-              <Link to="/portfolio" className={viewAllClass}>
+              <Link to="/Arch-Studio/portfolio" className={viewAllClass}>
                 View All Projects
               </Link>
             </div>
@@ -50,18 +50,18 @@ export default function FeaturedSection() {
           <div className="relative">
             <img
               className={imgClass}
-              src={`/portfolio/${windowSize}/image-prototype.jpg`}
+              src={`/Arch-Studio/portfolio/${windowSize}/image-prototype.jpg`}
               alt="image le prototype"
             />
             <span className={numberClass}>3</span>
             <div className={textClass}>
               <h4 className={subtitleClass}>Le Prototype</h4>
-              <Link to="/portfolio" className={viewAllClass}>
+              <Link to="/Arch-Studio/portfolio" className={viewAllClass}>
                 View All Projects
               </Link>
             </div>
           </div>
-          <Link className="lg:hidden hover:bg-zinc-800 active:bg-zinc-600 bg-black flex items-center justify-center py-4 px-6 gap-4 font-semibold w-full max-w-[311px] sm:max-w-[573px] text-white" to="/portfolio">
+          <Link className="lg:hidden hover:bg-zinc-800 active:bg-zinc-600 bg-black flex items-center justify-center py-4 px-6 gap-4 font-semibold w-full max-w-[311px] sm:max-w-[573px] text-white" to="/Arch-Studio/portfolio">
             See All
             <ArrowRightIcon className="h-8" />
           </Link>

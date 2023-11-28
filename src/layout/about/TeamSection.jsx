@@ -5,7 +5,7 @@ export default function TeamSection() {
     <section className="mx-auto w-fit flex relative max-lg:flex-col items-center lg:items-end">
         <img
           className="brightness-75 w-fit flex-grow-1 "
-          src={`/about/${windowSize}/image-hero.jpg`}
+          src={`/Arch-Studio/about/${windowSize}/image-hero.jpg`}
           alt="someone using a laptop"
         />
       
