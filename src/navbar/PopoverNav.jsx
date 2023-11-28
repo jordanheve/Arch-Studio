@@ -10,9 +10,9 @@ export default function PopoverNav() {
       <Popover.Overlay className="fixed inset-0 bg-black opacity-30 z-30" />
       <Popover.Panel className="absolute mt-6 -right-1  w-80 z-50">
         <nav className=" text-xl p-6 flex flex-col gap-6 bg-white text-slate-500 font-semibold">
-          <NavLink to="/portfolio">Portfolio</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="contact">Contact</NavLink>
+          <NavLink to="Arch-Studio/portfolio">Portfolio</NavLink>
+          <NavLink to="Arch-Studio/about">About Us</NavLink>
+          <NavLink to="Arch-Studio/contact">Contact</NavLink>
         </nav>
       </Popover.Panel>
     </Popover>
