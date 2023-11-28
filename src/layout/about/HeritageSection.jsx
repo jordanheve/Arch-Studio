@@ -1,11 +1,11 @@
 export default function HeritageSection() {
   return (
-    <section className="flex items-end">
-      <div className="w-1/2 pr-24">
+    <section className=" flex justify-center lg:items-end">
+      <div className="lg:w-1/2 lg:pr-24">
         <div className="border border-slate-200 w-20"></div>
 
-        <h3 className="text-7xl my-10 font-bold">Our Heritage</h3>
-        <div className="text-lg text-slate-600 grid gap-8">
+        <h3 className=" text-5xl sm:text-7xl my-10 font-bold">Our Heritage</h3>
+        <div className="text-lg text-slate-600 grid gap-8 ">
           <p>
             Founded in 2007, we started as a trio of architects. Our
             complimentary skills and relentless attention to detail turned Arch
@@ -23,7 +23,7 @@ export default function HeritageSection() {
           </p>
         </div>
       </div>
-      <img src="/about/desktop/image-heritage.jpg" alt="heritage" />
+      <img className="max-lg:hidden" src="/about/desktop/image-heritage.jpg" alt="heritage" />
     </section>
   );
 }

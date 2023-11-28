@@ -17,10 +17,10 @@ export const Portfolio = () => {
   };
 
   return (
-    <article className="grid grid-cols-3 gap-6">
+    <article className="grid justify-center lg:grid-cols-3 gap-6">
       <Fade>
         {portfolioData.map((item, index) => (
-          <div className="relative" key={item.id}>
+          <div className="relative cursor-pointer hover:opacity-80" key={item.id}>
             <div className='bg-gradient-to-t from-black opacity-50 to-45% h-full w-full absolute'></div>
             <img
               src={"/portfolio/" + windowSize + "/" + item.image}

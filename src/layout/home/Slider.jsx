@@ -62,7 +62,7 @@ export default function Slider () {
               </p>
               <Link 
                 to='/portfolio'
-                className="bg-black p-4 w-fit flex gap-4">
+                className="bg-black p-4 w-fit flex hover:bg-zinc-800 active:bg-zinc-600 gap-4">
                 See Our Portfolio
                 <ArrowRightIcon
                 className="h-6"

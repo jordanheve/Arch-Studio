@@ -26,7 +26,7 @@ function App() {
   return (
     <div 
    
-    className='max-w-[1100px] mx-auto'>
+    className='lg:max-w-[1100px] sm:max-w-[573px] max-w-[375px] mx-auto'>
           
       <BrowserRouter>
       <ScrollToTop/>

@@ -12,7 +12,7 @@ export default function MapSection() {
     
   return (
     <section id="map">
-    <MapContainer className='w-full h-96' center={[34.8, -92.2 ]} zoom={6} scrollWheelZoom={false}>
+    <MapContainer className='w-full h-96' center={[34.8, -92.2 ]} zoom={5.4} scrollWheelZoom={false}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

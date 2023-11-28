@@ -12,7 +12,7 @@ export default function FeaturedSection() {
       <section className="">
         <div className="flex justify-center lg:justify-between  mb-12">
           <h3 className="text-black text-6xl font-bold">Featured</h3>
-          <Link className="bg-black flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white max-lg:hidden" to="/portfolio">
+          <Link className="bg-black hover:bg-zinc-800 active:bg-zinc-600 flex items-center py-4 px-6 gap-4 font-semibold w-fit text-white max-lg:hidden" to="/portfolio">
             See All
             <ArrowRightIcon className="h-8" />
           </Link>
@@ -61,7 +61,7 @@ export default function FeaturedSection() {
               </Link>
             </div>
           </div>
-          <Link className="lg:hidden bg-black flex items-center justify-center py-4 px-6 gap-4 font-semibold w-full max-w-[311px] sm:max-w-[573px] text-white" to="/portfolio">
+          <Link className="lg:hidden hover:bg-zinc-800 active:bg-zinc-600 bg-black flex items-center justify-center py-4 px-6 gap-4 font-semibold w-full max-w-[311px] sm:max-w-[573px] text-white" to="/portfolio">
             See All
             <ArrowRightIcon className="h-8" />
           </Link>

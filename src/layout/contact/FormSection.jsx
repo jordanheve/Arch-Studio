@@ -82,8 +82,8 @@ export default function FormSection() {
   let alertClass = 'absolute right-2 bottom-2 font-semibold text-red-400 ';
 
   return (
-    <section className="flex">
-      <h3 className="text-7xl font-bold max-w-sm">Connect With Us</h3>
+    <section className="flex max-lg:flex-col">
+      <h3 className="text-5xl mb-8 sm:text-7xl font-bold max-w-sm">Connect With Us</h3>
       <div className="w-full ">
         <div className={"flex flex-col justify-center items-center"+successClass}>
             <CheckCircleIcon className="h-56"/>
