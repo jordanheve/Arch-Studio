@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer className=" max-md:py-20 max-md:bg-slate-200 mt-48 flex max-md:items-center left-0 w-full max-md:flex-col md:w-screen lg:w-full relative  md:absolute lg:relative">
       <div className="bg-black h-32 w-32 lg:h-48 lg:w-48 grid -top-16 place-items-center max-md:absolute">
-        <NavLink to="/">
+        <NavLink
+         title='Go to home page'
+         to="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="40">
             <path
               fill="#FFF"
@@ -24,7 +26,7 @@ export default function Footer() {
         className=" text-white md:absolute right-0 bottom-1/2 translate-y-1/2 bg-black hover:bg-zinc-800 active:bg-zinc-600 flex items-center justify-center py-4 px-8 gap-4 max-sm:w-full font-semibold text-lg"
       >
         See Our Portfolio
-        <ArrowRightIcon className="h-8" />
+        <ArrowRightIcon  className="h-8" />
       </Link>
     </footer>
   );
