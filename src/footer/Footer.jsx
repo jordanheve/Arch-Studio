@@ -17,9 +17,9 @@ export default function Footer() {
         </NavLink>
       </div>
       <div className="bg-slate-200 w-2/3 text-slate-500 font-semibold flex max-md:flex-col gap-10 items-center p-10 text-lg lg:h-48">
-        <NavLink to="/Arch-Studio/portfolio">Portfolio</NavLink>
-        <NavLink to="/Arch-Studio/about">About Us</NavLink>
-        <NavLink to="/Arch-Studio/contact">Contact</NavLink>
+        <Link to="/Arch-Studio/portfolio">Portfolio</Link>
+        <Link to="/Arch-Studio/about">About Us</Link>
+        <Link to="/Arch-Studio/contact">Contact</Link>
       </div>
       <Link
         to="/Arch-Studio/portfolio"
